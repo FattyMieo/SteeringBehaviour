@@ -19,8 +19,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4073166822513278}
-  - component: {fileID: 212978874659481708}
   - component: {fileID: 114240064377110792}
+  - component: {fileID: 212978874659481708}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -57,7 +57,7 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0}
   repelRadius: 2
   nearbyBalls: []
-  repelForceFactor: 10
+  repelAmplification: 5
   ignoreMass: 1
   useFixedAcceleration: 1
   fixedAcceleration: 0.002
