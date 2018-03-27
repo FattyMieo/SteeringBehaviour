@@ -9,70 +9,43 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1005564744298656}
+  m_RootGameObject: {fileID: 1612601039896444}
   m_IsPrefabParent: 1
---- !u!1 &1005564744298656
+--- !u!1 &1612601039896444
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4073166822513278}
-  - component: {fileID: 114240064377110792}
-  - component: {fileID: 212978874659481708}
+  - component: {fileID: 4434612989209510}
+  - component: {fileID: 212365504120916178}
   m_Layer: 0
-  m_Name: Ball
-  m_TagString: Agent
+  m_Name: Obstacle
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4073166822513278
+--- !u!4 &4434612989209510
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1005564744298656}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_GameObject: {fileID: 1612601039896444}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 10, z: 0}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114240064377110792
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1005564744298656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba0a7fa962d300540839fee9ca5e7eca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mass: 1000
-  velocity: {x: 0, y: 0}
-  acceleration: {x: 0, y: 0}
-  ballRepelRadius: 1
-  ballRepelAmplification: 10
-  obstacleRepelRadius: 1
-  obstacleRepelAmplification: 10
-  nearbyObjects: []
-  ignoreMass: 1
-  useFixedAcceleration: 1
-  fixedAcceleration: 0.002
-  useCappedSpeed: 1
-  maxSpeed: 0.05
-  useSpecialEffect: 0
-  minScale: 0.0001
---- !u!212 &212978874659481708
+--- !u!212 &212365504120916178
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1005564744298656}
+  m_GameObject: {fileID: 1612601039896444}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -100,9 +73,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 03e78fe4f45ce2243a6c3bb85a1ecc13, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.21323532, b: 0.21323532, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

@@ -52,8 +52,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 50
-  minMass: 250
-  maxMass: 2000
+  minMaxMass: {x: 250, y: 2000}
+  ballTag: Agent
+  obstacleTag: Obstacle
   ballList: []
+  obstacleList: []
   ballPrefab: {fileID: 1005564744298656, guid: 1b42b4ca45d3cc44b8c3498fa59aa400, type: 2}
   gravField: {fileID: 0}
