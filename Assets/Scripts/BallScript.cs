@@ -75,8 +75,12 @@ public class BallScript : MonoBehaviour
 		float totalMag = (dir + externalForce).magnitude;
 		if(useFixedAcceleration) totalMag = fixedAcceleration;
 
+		// Calculate direction of force
+		// Do "dir.normalized" to prioritise on external forces
+		Vector2 totalDir = dir.normalized + externalForce;
+
 		// Add force to the ball
-		AddForce2D(totalMag, (dir + externalForce).normalized);
+		AddForce2D(totalMag, totalDir.normalized);
 
 		//================================================================================
 		// * Special Effects
@@ -145,7 +149,7 @@ public class BallScript : MonoBehaviour
 			// Add repelling force to list if ball is within radius
 			Vector3 dir = transform.position - ballList[i].position;
 			float totalRepelRadius = ballRepelRadius + (transform.localScale.x / 2.0f) + (ballList[i].localScale.x / 2.0f);
-			if(dir.sqrMagnitude <= ballRepelRadius * ballRepelRadius)
+			if(dir.sqrMagnitude <= totalRepelRadius * totalRepelRadius)
 			{
 				externalForces.Add((Vector2)dir * ballRepelAmplification);
 				nearbyObjects.Add(ballList[i]);

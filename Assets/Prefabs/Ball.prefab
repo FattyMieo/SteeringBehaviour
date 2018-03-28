@@ -55,7 +55,7 @@ MonoBehaviour:
   mass: 1000
   velocity: {x: 0, y: 0}
   acceleration: {x: 0, y: 0}
-  ballRepelRadius: 1
+  ballRepelRadius: 0.5
   ballRepelAmplification: 10
   obstacleRepelRadius: 1
   obstacleRepelAmplification: 10
